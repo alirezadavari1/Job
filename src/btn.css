@@ -1,0 +1,10 @@
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.02); /* بزرگ‌تر شدن دکمه */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* اضافه کردن سایه هنگام هاور */
+    background-color: #333333; /* تغییر رنگ پس‌زمینه */
+  }
+  

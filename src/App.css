@@ -1,0 +1,226 @@
+.header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navList li a:hover {
+  text-decoration: underline;
+}
+#h1-head{
+  margin: 50px 5% 50px 5%;
+}
+#input-text-1 {
+  margin-left: 30px;
+  margin-right: 25%;
+}
+
+#input-text-2,
+#input-text-1 {
+  width: 330px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  color: #4b5563;
+  background-color: #f9fafb;
+  transition: all 0.3s ease-in-out;
+
+  box-shadow: none;
+}
+
+#input-text-2::placeholder,
+#input-text-1::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+#input-text-2:focus,
+#input-text-1:focus {
+  border-color: #030507;
+  box-shadow: 0 0 5px rgba(63, 67, 71, 0.5);
+  background-color: #ffffff;
+}
+#input-text-2{
+  margin-left: 2%;
+}
+
+
+.switch-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row-reverse; 
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  right: 3px; 
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1b1919;
+}
+
+input:checked + .slider::before {
+  transform: translateX(-20px); 
+}
+
+.label-text {
+  font-size: 14px;
+  color: #4b5563;
+  margin-right: 5px;
+  margin-left: 1%;
+}
+#label-1{
+  margin-bottom: 10px;
+  margin-right: 5%;
+}
+#a1{
+  margin-top: 28px;
+  display: grid;
+  width: 14%;
+  margin-right: 5%;
+}
+.label-text,span,label{
+  font-size: 19px;
+}
+
+#a-2{
+  display: table;
+  margin-top: 20px;
+}
+#a-3{
+  border-radius: 25px;
+}
+#a-5{
+  gap: 5px;
+}
+
+.card-title,.card-text{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* استایل کلی اسلایدر */
+.custom-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  direction: rtl; /* تغییر جهت حرکت */
+  position: relative;
+  transition: background 0.2s ease-in-out;
+}
+
+/* مقدار طی شده در نوار (از راست به چپ) */
+.custom-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: linear-gradient(to left, black var(--progress, 0%), #ddd var(--progress, 0%));
+}
+
+/* استایل دایره (Thumb) برای Chrome, Safari, Edge */
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: black !important; /* کاملاً مشکی */
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+  border: none !important; /* حذف هرگونه رنگ پیش‌فرض */
+  box-shadow: none !important; /* حذف افکت‌های اضافی */
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* استایل دایره (Thumb) برای Firefox */
+.custom-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: black !important; /* کاملاً مشکی */
+  border-radius: 50%;
+  cursor: pointer;
+  border: none !important;
+  box-shadow: none !important;
+}
